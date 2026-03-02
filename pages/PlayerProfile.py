@@ -9,7 +9,7 @@ import pandas as pd
 supabase = get_supabase()
 
 st.set_page_config(page_title="🎾 Player Profiles", layout="centered")
-st.title("🎾 Player Profiles - TiraDinks Official")
+st.title("🎾 Player Profiles - LPC Official")
 
 # =====================================================
 # LOAD PLAYERS (used for display + delete dropdown)
