@@ -326,6 +326,23 @@ with st.sidebar:
     if st.button("Delete Profile") and selected_profile:
         delete_profile(selected_profile)
 
+    st.divider()
+    st.subheader("📥 Export Data")
+
+    st.download_button(
+        "⬇ Download Match History CSV",
+        data=matches_csv(),
+        file_name="pickleball_matches.csv",
+        mime="text/csv"
+    )
+
+    st.download_button(
+        "⬇ Download Player Stats CSV",
+        data=players_csv(),
+        file_name="pickleball_players.csv",
+        mime="text/csv"
+    )
+
 # ======================================================
 # MAIN
 # ======================================================
